@@ -1,0 +1,105 @@
+{
+    "jarvis": {
+        "name": "JARVIS",
+        "version": "1.0.0",
+        "language": "es",
+        "debug": false,
+        "log_level": "INFO",
+        "log_file": "logs/jarvis.log",
+        "max_log_size_mb": 10,
+        "log_backup_count": 5
+    },
+    "interaction": {
+        "mode": "text",
+        "wake_word": "hey jarvis",
+        "prompt_symbol": "❯",
+        "greeting": true,
+        "farewell": true,
+        "confirm_dangerous_actions": true
+    },
+    "voice": {
+        "enabled": false,
+        "tts_engine": "pyttsx3",
+        "tts_rate": 180,
+        "tts_volume": 0.9,
+        "tts_voice_index": 0,
+        "stt_engine": "google",
+        "stt_language": "es-ES",
+        "stt_timeout": 5,
+        "stt_phrase_limit": 10,
+        "wake_word_enabled": false,
+        "wake_word_timeout": 2
+    },
+    "nlp": {
+        "spacy_model": "es_core_news_md",
+        "fuzzy_threshold": 70,
+        "confidence_threshold": 0.5,
+        "use_spacy": true,
+        "fallback_to_rules": true
+    },
+    "memory": {
+        "enabled": true,
+        "data_dir": "data",
+        "history_max_entries": 1000,
+        "auto_save_interval_seconds": 60,
+        "learn_from_corrections": true
+    },
+    "task_engine": {
+        "max_concurrent_tasks": 10,
+        "task_timeout_seconds": 300,
+        "enable_scheduler": true,
+        "scheduler_check_interval": 1
+    },
+    "skills": {
+        "skills_dir": "skills",
+        "auto_discover": true,
+        "disabled_skills": [],
+        "apps_registry": {
+            "chrome": "chrome.exe",
+            "navegador": "chrome.exe",
+            "google chrome": "chrome.exe",
+            "firefox": "firefox.exe",
+            "edge": "msedge.exe",
+            "notepad": "notepad.exe",
+            "bloc de notas": "notepad.exe",
+            "calculadora": "calc.exe",
+            "explorador": "explorer.exe",
+            "word": "WINWORD.EXE",
+            "excel": "EXCEL.EXE",
+            "powerpoint": "POWERPNT.EXE",
+            "visual studio code": "code.exe",
+            "vscode": "code.exe",
+            "cmd": "cmd.exe",
+            "terminal": "wt.exe",
+            "powershell": "powershell.exe",
+            "spotify": "spotify.exe",
+            "discord": "discord.exe",
+            "steam": "steam.exe",
+            "paint": "mspaint.exe",
+            "teams": "teams.exe",
+            "outlook": "outlook.exe",
+            "task manager": "taskmgr.exe",
+            "administrador de tareas": "taskmgr.exe"
+        },
+        "default_browser": "chrome",
+        "default_search_engine": "google",
+        "screenshot_dir": "screenshots",
+        "files_default_dir": "."
+    },
+    "ui": {
+        "theme": "hacker",
+        "colors": {
+            "primary": "cyan",
+            "secondary": "green",
+            "accent": "magenta",
+            "error": "red",
+            "warning": "yellow",
+            "success": "green",
+            "info": "blue"
+        },
+        "show_banner": true,
+        "show_timestamps": true,
+        "show_skill_name": false,
+        "animation_speed": "normal"
+    }
+}

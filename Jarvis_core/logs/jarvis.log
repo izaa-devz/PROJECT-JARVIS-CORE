@@ -1,0 +1,106 @@
+2026-04-17T22:12:17 | jarvis.utils.config            | INFO     | Configuración cargada desde config.json
+2026-04-17T22:12:17 | jarvis.voice.tts               | INFO     | TTS (pyttsx3) disponible
+2026-04-17T22:12:17 | jarvis.voice.stt               | INFO     | STT (SpeechRecognition) disponible
+2026-04-17T22:12:17 | jarvis.core.engine             | INFO     | ============================================================
+2026-04-17T22:12:17 | jarvis.core.engine             | INFO     | JARVIS Core — Iniciando sistema
+2026-04-17T22:12:17 | jarvis.core.engine             | INFO     | ============================================================
+2026-04-17T22:12:17 | jarvis.memory.manager          | INFO     | Memoria inicializada — Historial: 0 registros, Preferencias: {'favorites': 0, 'aliases': 0, 'corrections': 0, 'custom': 0}
+2026-04-17T22:12:17 | jarvis.skills.registry         | INFO     | Skills cargados: 9/9 — Intents mapeados: 33
+2026-04-17T22:12:17 | jarvis.router.intent_classifier | WARNING  | spaCy no disponible (No module named 'spacy'). Usando solo reglas.
+2026-04-17T22:12:17 | jarvis.task_engine.scheduler   | INFO     | Scheduler iniciado
+2026-04-17T22:12:17 | jarvis.core.engine             | CRITICAL | Error fatal: 'charmap' codec can't encode character '\u2713' in position 0: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Contabilidad\.gemini\antigravity\scratch\virtual-robot\Jarvis_core\core\engine.py", line 103, in start
+    await self._initialize()
+  File "C:\Users\Contabilidad\.gemini\antigravity\scratch\virtual-robot\Jarvis_core\core\engine.py", line 175, in _initialize
+    self.ui.show_ready()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Contabilidad\.gemini\antigravity\scratch\virtual-robot\Jarvis_core\ui\terminal_ui.py", line 116, in show_ready
+    self._console.print(
+    ~~~~~~~~~~~~~~~~~~~^
+        "  [bold green]✓[/] Sistema JARVIS [bold cyan]OPERATIVO[/]  "
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "[dim]| Escribe [bold]'ayuda'[/bold] para ver comandos | [bold]'salir'[/bold] para terminar[/dim]"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Contabilidad\AppData\Local\Programs\Python\Python314\Lib\site-packages\rich\console.py", line 1704, in print
+    with self:
+         ^^^^
+  File "C:\Users\Contabilidad\AppData\Local\Programs\Python\Python314\Lib\site-packages\rich\console.py", line 864, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Contabilidad\AppData\Local\Programs\Python\Python314\Lib\site-packages\rich\console.py", line 820, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Contabilidad\AppData\Local\Programs\Python\Python314\Lib\site-packages\rich\console.py", line 2055, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Contabilidad\AppData\Local\Programs\Python\Python314\Lib\site-packages\rich\console.py", line 2091, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Contabilidad\AppData\Local\Programs\Python\Python314\Lib\site-packages\rich\_windows_renderer.py", line 17, in legacy_windows_render
+    term.write_styled(text, style)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Contabilidad\AppData\Local\Programs\Python\Python314\Lib\site-packages\rich\_win32_console.py", line 441, in write_styled
+    self.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Contabilidad\AppData\Local\Programs\Python\Python314\Lib\site-packages\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\Contabilidad\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 0: character maps to <undefined>
+2026-04-17T22:12:47 | jarvis.utils.config            | INFO     | Configuración cargada desde config.json
+2026-04-17T22:12:47 | jarvis.voice.tts               | INFO     | TTS (pyttsx3) disponible
+2026-04-17T22:12:48 | jarvis.voice.stt               | INFO     | STT (SpeechRecognition) disponible
+2026-04-17T22:12:48 | jarvis.core.engine             | INFO     | ============================================================
+2026-04-17T22:12:48 | jarvis.core.engine             | INFO     | JARVIS Core — Iniciando sistema
+2026-04-17T22:12:48 | jarvis.core.engine             | INFO     | ============================================================
+2026-04-17T22:12:48 | jarvis.memory.manager          | INFO     | Memoria inicializada — Historial: 0 registros, Preferencias: {'favorites': 0, 'aliases': 0, 'corrections': 0, 'custom': 0}
+2026-04-17T22:12:48 | jarvis.skills.registry         | INFO     | Skills cargados: 9/9 — Intents mapeados: 33
+2026-04-17T22:12:48 | jarvis.router.intent_classifier | WARNING  | spaCy no disponible (No module named 'spacy'). Usando solo reglas.
+2026-04-17T22:12:48 | jarvis.task_engine.scheduler   | INFO     | Scheduler iniciado
+2026-04-17T22:12:48 | jarvis.core.engine             | INFO     | JARVIS listo — 9 skills cargados, modo: text
+2026-04-17T22:12:48 | jarvis.router.command_router   | INFO     | Ejecutando: skill='conversation' intent='greeting' entities={'target': 'hola'}
+2026-04-17T22:12:48 | jarvis.router.command_router   | INFO     | Ejecutando: skill='conversation' intent='farewell' entities={'target': 'exit'}
+2026-04-17T22:12:48 | jarvis.core.engine             | INFO     | Iniciando secuencia de apagado...
+2026-04-17T22:12:48 | jarvis.task_engine.scheduler   | INFO     | Scheduler detenido
+2026-04-17T22:12:48 | jarvis.task_engine.manager     | INFO     | Task Manager cerrado
+2026-04-17T22:12:48 | jarvis.memory.manager          | INFO     | Memoria guardada y cerrada
+2026-04-17T22:28:06 | jarvis.utils.config            | INFO     | Configuración cargada desde config.json
+2026-04-17T22:28:06 | jarvis.voice.tts               | INFO     | TTS (pyttsx3) disponible
+2026-04-17T22:28:07 | jarvis.voice.stt               | INFO     | STT (SpeechRecognition) disponible
+2026-04-17T22:28:07 | jarvis.core.engine             | INFO     | ============================================================
+2026-04-17T22:28:07 | jarvis.core.engine             | INFO     | JARVIS Core — Iniciando sistema
+2026-04-17T22:28:07 | jarvis.core.engine             | INFO     | ============================================================
+2026-04-17T22:28:07 | jarvis.memory.manager          | INFO     | Memoria inicializada — Historial: 2 registros, Preferencias: {'favorites': 0, 'aliases': 0, 'corrections': 0, 'custom': 0}
+2026-04-17T22:28:07 | jarvis.skills.registry         | INFO     | Skills cargados: 9/9 — Intents mapeados: 33
+2026-04-17T22:28:07 | jarvis.router.intent_classifier | WARNING  | spaCy no disponible (No module named 'spacy'). Usando solo reglas.
+2026-04-17T22:28:07 | jarvis.task_engine.scheduler   | INFO     | Scheduler iniciado
+2026-04-17T22:28:07 | jarvis.core.engine             | INFO     | JARVIS listo — 9 skills cargados, modo: text
+2026-04-17T22:28:07 | jarvis.router.command_router   | INFO     | Ejecutando: skill='conversation' intent='greeting' entities={'target': 'hola jarvis'}
+2026-04-17T22:28:07 | jarvis.router.command_router   | INFO     | Ejecutando: skill='conversation' intent='time_query' entities={'target': 'hora'}
+2026-04-17T22:28:07 | jarvis.router.command_router   | INFO     | Ejecutando: skill='conversation' intent='date_query' entities={'target': 'dia hoy'}
+2026-04-17T22:28:07 | jarvis.router.command_router   | INFO     | Ejecutando: skill='system_info' intent='system_info' entities={'target': 'cuanta ram tengo'}
+2026-04-17T22:28:07 | jarvis.router.command_router   | INFO     | Ejecutando: skill='screenshot' intent='take_screenshot' entities={'target': 'pantalla'}
+2026-04-17T22:28:10 | jarvis.skills.screenshot       | INFO     | Screenshot guardado: C:\Users\Contabilidad\.gemini\antigravity\scratch\virtual-robot\Jarvis_core\screenshots\screenshot_20260417_222809.png
+2026-04-17T22:28:10 | jarvis.router.command_router   | INFO     | Ejecutando: skill='conversation' intent='joke' entities={'target': 'cuentame chiste'}
+2026-04-17T22:28:10 | jarvis.router.command_router   | INFO     | Ejecutando: skill='conversation' intent='help' entities={'target': 'ayuda'}
+2026-04-17T22:28:10 | jarvis.router.command_router   | INFO     | Ejecutando: skill='conversation' intent='farewell' entities={'target': 'adios'}
+2026-04-17T22:28:10 | jarvis.core.engine             | INFO     | Iniciando secuencia de apagado...
+2026-04-17T22:28:10 | jarvis.task_engine.scheduler   | INFO     | Scheduler detenido
+2026-04-17T22:28:10 | jarvis.task_engine.manager     | INFO     | Task Manager cerrado
+2026-04-17T22:28:10 | jarvis.memory.manager          | INFO     | Memoria guardada y cerrada
+2026-04-17T22:32:29 | jarvis.utils.config            | INFO     | Configuración cargada desde config.json
+2026-04-17T22:32:29 | jarvis.voice.tts               | INFO     | TTS (pyttsx3) disponible
+2026-04-17T22:32:29 | jarvis.voice.stt               | INFO     | STT (SpeechRecognition) disponible
+2026-04-17T22:32:29 | jarvis.core.engine             | INFO     | ============================================================
+2026-04-17T22:32:29 | jarvis.core.engine             | INFO     | JARVIS Core — Iniciando sistema
+2026-04-17T22:32:29 | jarvis.core.engine             | INFO     | ============================================================
+2026-04-17T22:32:29 | jarvis.memory.manager          | INFO     | Memoria inicializada — Historial: 10 registros, Preferencias: {'favorites': 0, 'aliases': 0, 'corrections': 0, 'custom': 0}
+2026-04-17T22:32:29 | jarvis.skills.registry         | INFO     | Skills cargados: 9/9 — Intents mapeados: 33
+2026-04-17T22:32:29 | jarvis.router.intent_classifier | WARNING  | spaCy no disponible (No module named 'spacy'). Usando solo reglas.
+2026-04-17T22:32:29 | jarvis.task_engine.scheduler   | INFO     | Scheduler iniciado
+2026-04-17T22:32:29 | jarvis.core.engine             | INFO     | JARVIS listo — 9 skills cargados, modo: text

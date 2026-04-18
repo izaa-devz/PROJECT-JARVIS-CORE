@@ -1,0 +1,30 @@
+# ============================================
+# JARVIS Core — Dependencies
+# ============================================
+
+# --- Core & Async ---
+aiofiles>=23.0
+
+# --- NLP ---
+spacy>=3.7
+rapidfuzz>=3.0
+
+# --- System Control ---
+psutil>=5.9
+pyautogui>=0.9
+pycaw>=20230407
+screen-brightness-control>=0.22
+Pillow>=10.0
+comtypes>=1.2
+
+# --- Voice (optional — system works without these) ---
+pyttsx3>=2.90
+SpeechRecognition>=3.10
+PyAudio>=0.2.14
+
+# --- UI ---
+rich>=13.0
+prompt-toolkit>=3.0
+
+# --- Utilities ---
+python-dateutil>=2.8
